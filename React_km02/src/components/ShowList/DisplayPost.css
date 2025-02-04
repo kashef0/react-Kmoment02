@@ -1,0 +1,146 @@
+h1 {
+    padding: .5rem;
+    margin-top: .5rem;
+    font-size: 2rem;
+}
+
+.loading {
+    font-size: 1.6rem;
+}
+
+.loading p {
+    padding: 1rem;
+}
+
+.error {
+    padding: 2rem;
+    color: red;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    overflow-y: auto;
+    height: 70dvh;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.card-body {
+    background: #fff;
+    padding: 20px;
+    margin: .25rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 300px; 
+    max-width: 350px; 
+    box-sizing: border-box;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    word-wrap: break-word;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-span {
+    color: brown;
+}
+
+.section-container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 100%;
+    text-align: start;
+}
+
+.card-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 1024px) {
+    .card-body {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        flex: 1 1 100%; 
+    }
+}
+
+  
+  .state-finished {
+    text-decoration: line-through;
+    color: #28a745; 
+  }
+  
+
+  .state-start {
+    color: #007bff; 
+  }
+  
+
+  .state-not-start {
+    color: #dc3545; 
+  }
+  

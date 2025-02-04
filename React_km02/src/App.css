@@ -1,0 +1,37 @@
+
+
+div#root {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  div#root::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://img.freepik.com/free-photo/close-up-goat-eating-leaves-plant_23-2147905491.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+    filter: blur(10px); 
+    z-index: -1; 
+  }
+  
+  
+
+.container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    max-width: 900px;
+    justify-self: center;
+    margin: 1rem;
+
+}
