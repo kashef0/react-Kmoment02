@@ -63,7 +63,7 @@ const CreateToDo = () => {
     <>
       <form onSubmit={submitForm}>
         {error.title && (<p className="error-message">{error.title}</p>)}
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Titel</label>
         <input 
           type="text" 
           name="title" 
@@ -73,7 +73,7 @@ const CreateToDo = () => {
         />
 
         {error.description && (<p className="error-message">{error.description}</p>)}
-        <label htmlFor="description">Description</label>
+        <label htmlFor="description">Beskrivning</label>
         <input 
           type="text" 
           name="description" 
