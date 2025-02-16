@@ -13,8 +13,10 @@ function App() {
         <Nav />
 
         <Routes >
+          <Route  path="/" element={<DisplayPost />} />
           <Route  path="/DisplayPost" element={<DisplayPost />} />
           <Route  path="/CreateToDo" element={<CreateToDo />} />
+          <Route  path="*" element={<h1>404 - kunde inte hitta sidan, försök senare....</h1>} />
         </Routes>
         <Footer Utvecklare={"Mohamed Abokashef"}/>
       </div>

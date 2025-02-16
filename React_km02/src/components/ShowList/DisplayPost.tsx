@@ -31,10 +31,10 @@ const DisplayPost = () => {
   // hämta uppgifter vid sidladdning och efter uppdatering
   useEffect(() => {
     const getPosts = async () => {
-      setIsLoading(true); 
       const apiUrl = import.meta.env.VITE_API_URL; 
       
       try {
+        setIsLoading(true); 
         const res = await fetch(apiUrl);
         if (!res.ok) {
           throw new Error('Det gick inte att hämta inlägg');
@@ -45,7 +45,7 @@ const DisplayPost = () => {
         setError(''); // Nollställer eventuella felmeddelanden
       } catch (error) {
         console.error(error);
-        setError('Det gick inte att hämta inlägg, försök senare....');
+        setError('Något fel hände vid hämtning av inlägg, försök senare....');
       } finally {
         setIsLoading(false); // Sätter laddningsstatus till false
       }

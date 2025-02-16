@@ -21,6 +21,7 @@ h1 {
 .card {
     display: flex;
     overflow-y: auto;
+    height: 70dvh;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
